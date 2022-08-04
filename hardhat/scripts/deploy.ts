@@ -1,10 +1,10 @@
 import { ethers } from "hardhat";
 
 async function main() {
-  const ERC1155Custom = await ethers.getContractFactory("ERC1155Custom");
-  const erc1155 = await ERC1155Custom.deploy();
+  const ERC721Custom = await ethers.getContractFactory("ERC721Custom");
+  const erc721 = await ERC721Custom.deploy();
 
-  await erc1155.deployed();
+  await erc721.deployed();
 }
 
 // We recommend this pattern to be able to use async/await everywhere
